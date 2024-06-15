@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>FORM VALIDATION</h1>
+        </div>
+        <div class="form">
+            <form>
+                <div class="input">
+            <label for="name">NAME</label>
+            <input type="text" id="nameInput">
+            <span id="nameError" ></span>
+        </div>
+            <div class="input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com">
+            <span id="emailError"></span>
+        </div>
+            <div class="input">
+             <label for="age">AGE</label>
+             <input type="text" name="age" id="age" placeholder="Must be atleast 18">
+             <span id="ageError"></span>
+            </div>
+             <div class="input">
+             <label for="number">PHONE NUMBER</label>
+             <input type="text" name="number" id="number">
+             <span id="numError"></span>
+            </div>
+             <div class="input">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" placeholder="Must be atleast 8 characters ">
+            <span id="passError"></span>
+        </div>
+            <div class="input"</div>
+            <label for="cpassword">CONFIRM PASSWORD</label>
+            <input type="password" name="cpassword" id="confirmPassword">
+            <span id="cPassError"></span>
+        </div>
+            <div class="checkbox input" >
+            <input type="checkbox" name="check" id="check">
+            <p>Agree to all terms and conditions</p>
+        <span id="checkError"></span>
+        </div>
+        <button id="but" onclick="validateForm()">Sign up</button>
+        <span id="butError"></span>
+    </form>
+        </div>
+    </div>
+</body>
+</html>
